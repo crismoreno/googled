@@ -10,191 +10,191 @@ function Game() {
   this.cases = [{
     name: "Prada",
     searches: 823000,
-    img: "../IMG/CASES/prada.jpg"
+    img: "IMG/CASES/prada.jpg"
   }, {
     name: "Lesbian",
     searches: 1500000,
-    img: "../IMG/CASES/lesbian.jpg"
+    img: "IMG/CASES/lesbian.jpg"
   }, {
     name: "Heroin",
     searches: 368000,
-    img: "../IMG/CASES/heroin.jpg"
+    img: "IMG/CASES/heroin.jpg"
   }, {
     name: "Ariana Grande",
     searches: 11000000,
-    img: "../IMG/CASES/ariana-grande.jpg"
+    img: "IMG/CASES/ariana-grande.jpg"
   }, {
     name: "Berlin Wall",
     searches: 246000,
-    img: "../IMG/CASES/berlin-wall.jpg"
+    img: "IMG/CASES/berlin-wall.jpg"
   }, {
     name: "Narcos",
     searches: 1830000,
-    img: "../IMG/CASES/narcos.jpg"
+    img: "IMG/CASES/narcos.jpg"
   }, {
     name: "Homer Simpson",
     searches: 246000,
-    img: "../IMG/CASES/homer-simpson.jpg"
+    img: "IMG/CASES/homer-simpson.jpg"
   }, {
     name: "Magic Johnson",
     searches: 450000,
-    img: "../IMG/CASES/magic-johnson.jpg"
+    img: "IMG/CASES/magic-johnson.jpg"
   }, {
     name: "Tuberculosis",
     searches: 673000,
-    img: "../IMG/CASES/tuberculosis.jpg"
+    img: "IMG/CASES/tuberculosis.jpg"
   }, {
     name: "Saving Private Ryan",
     searches: 301000,
-    img: "../IMG/CASES/saving-private-ryan.jpg"
+    img: "IMG/CASES/saving-private-ryan.jpg"
   }, {
     name: "Photoshop",
     searches: 7480000,
-    img: "../IMG/CASES/photoshop.jpg"
+    img: "IMG/CASES/photoshop.jpg"
   }, {
     name: "Ecstacy",
     searches: 673000,
-    img: "../IMG/CASES/ecstacy.jpg"
+    img: "IMG/CASES/ecstacy.jpg"
   }, {
     name: "Insomnia",
     searches: 1000000,
-    img: "../IMG/CASES/insomnia.jpg"
+    img: "IMG/CASES/insomnia.jpg"
   }, {
     name: "Forrest Gump",
     searches: 1000000,
-    img: "../IMG/CASES/forrest-gump.jpg"
+    img: "IMG/CASES/forrest-gump.jpg"
   }, {
     name: "Casablanca",
     searches: 550000,
-    img: "../IMG/CASES/casablanca.jpg"
+    img: "IMG/CASES/casablanca.jpg"
   }, {
     name: "Prince",
     searches: 748000,
-    img: "../IMG/CASES/prince.jpg"
+    img: "IMG/CASES/prince.jpg"
   }, {
     name: "Mercury",
     searches: 550000,
-    img: "../IMG/CASES/mercury.jpg"
+    img: "IMG/CASES/mercury.jpg"
   }, {
     name: "Jaguar E-Type",
     searches: 60500,
-    img: "../IMG/CASES/jaguar-etype.jpg"
+    img: "IMG/CASES/jaguar-etype.jpg"
   }, {
     name: "Slacklining",
     searches: 49500,
-    img: "../IMG/CASES/slacklining.jpg"
+    img: "IMG/CASES/slacklining.jpg"
   }, {
     name: "Pepsi",
     searches: 450000,
-    img: "../IMG/CASES/pepsi.jpg"
+    img: "IMG/CASES/pepsi.jpg"
   }, {
     name: "Feminism",
     searches: 450000,
-    img: "../IMG/CASES/feminism.jpg"
+    img: "IMG/CASES/feminism.jpg"
   }, {
     name: "Capitalism",
     searches: 301000,
-    img: "../IMG/CASES/capitalism.jpg"
+    img: "IMG/CASES/capitalism.jpg"
   }, {
     name: "Badminton",
     searches: 1000000,
-    img: "../IMG/CASES/badminton.jpg"
+    img: "IMG/CASES/badminton.jpg"
   }, {
     name: "Cricket",
     searches: 5000000,
-    img: "../IMG/CASES/cricket.jpg"
+    img: "IMG/CASES/cricket.jpg"
   }, {
     name: "Chanel",
     searches: 1500000,
-    img: "../IMG/CASES/chanel.jpg"
+    img: "IMG/CASES/chanel.jpg"
   }, {
     name: "Family Guy",
     searches: 1220000,
-    img: "../IMG/CASES/family-guy.jpg"
+    img: "IMG/CASES/family-guy.jpg"
   }, {
     name: "Wembley Stadium",
     searches: 201000,
-    img: "../IMG/CASES/wembley-stadium.jpg"
+    img: "IMG/CASES/wembley-stadium.jpg"
   }, {
     name: "Vietnam",
     searches: 1220000,
-    img: "../IMG/CASES/vietnam.jpg"
+    img: "IMG/CASES/vietnam.jpg"
   }, {
     name: "Whiplash",
     searches: 823000,
-    img: "../IMG/CASES/whiplash.jpg"
+    img: "IMG/CASES/whiplash.jpg"
   }, {
     name: "Game of Thrones",
     searches: 11100000,
-    img: "../IMG/CASES/game-of-thrones.jpg"
+    img: "IMG/CASES/game-of-thrones.jpg"
   }, {
     name: "South Korea",
     searches: 368000,
-    img: "../IMG/CASES/south-korea.jpg"
+    img: "IMG/CASES/south-korea.jpg"
   }, {
     name: "Suicide",
     searches: 673000,
-    img: "../IMG/CASES/suicide.jpg"
+    img: "IMG/CASES/suicide.jpg"
   }, {
     name: "Mc Donalds",
     searches: 11000000,
-    img: "../IMG/CASES/mc-donalds.jpg"
+    img: "IMG/CASES/mc-donalds.jpg"
   }, {
     name: "David Copperfield",
     searches: 246000,
-    img: "../IMG/CASES/david-copperfield.jpg"
+    img: "IMG/CASES/david-copperfield.jpg"
   }, {
     name: "Marathon",
     searches: 368000,
-    img: "../IMG/CASES/marathon.jpg"
+    img: "IMG/CASES/marathon.jpg"
   }, {
     name: "Torah",
     searches: 90500,
-    img: "../IMG/CASES/torah.jpg"
+    img: "IMG/CASES/torah.jpg"
   }, {
     name: "Fake News",
     searches: 60500,
-    img: "../IMG/CASES/fake-news.jpg"
+    img: "IMG/CASES/fake-news.jpg"
   }, {
     name: "Xi Jinping",
     searches: 110000,
-    img: "../IMG/CASES/xi-jinping.jpg"
+    img: "IMG/CASES/xi-jinping.jpg"
   }, {
     name: "Volcano Surfing",
     searches: 1300,
-    img: "../IMG/CASES/volcano-surfing.jpg"
+    img: "IMG/CASES/volcano-surfing.jpg"
   }, {
     name: "Elvis Presley",
     searches: 1500000,
-    img: "../IMG/CASES/elvis-presley.jpg"
+    img: "IMG/CASES/elvis-presley.jpg"
   }, {
     name: "Thomas Edison",
     searches: 368000,
-    img: "../IMG/CASES/thomas-edison.jpg"
+    img: "IMG/CASES/thomas-edison.jpg"
   }, {
     name: "Valentines Day",
     searches: 2740000,
-    img: "../IMG/CASES/valentines-day.jpg"
+    img: "IMG/CASES/valentines-day.jpg"
   }, {
     name: "Taoism",
     searches: 90500,
-    img: "../IMG/CASES/taoism.jpg"
+    img: "IMG/CASES/taoism.jpg"
   }, {
     name: "Budweiser",
     searches: 301000,
-    img: "../IMG/CASES/budweiser.jpg"
+    img: "IMG/CASES/budweiser.jpg"
   }, {
     name: "Auschwitz",
     searches: 673000,
-    img: "../IMG/CASES/auschwitz.jpg"
+    img: "IMG/CASES/auschwitz.jpg"
   }, {
     name: "Vodafone",
     searches: 13600000,
-    img: "../IMG/CASES/vodafone.jpg"
+    img: "IMG/CASES/vodafone.jpg"
   }, {
     name: "My Space",
     searches: 1500000,
-    img: "../IMG/CASES/myspace.jpg"
+    img: "IMG/CASES/myspace.jpg"
   }, ];
 
 
@@ -222,12 +222,12 @@ Game.prototype.home = function() {
 
   // LOGO
   var logo = $('<img class="logo">');
-  logo.attr("src", "../IMG/googled.png");
+  logo.attr("src", "IMG/googled.png");
   logo.appendTo('.flexbox-intro');
 
   // GAME DESCRIPTION
   var description = $('<img class="description">');
-  description.attr("src", "../IMG/description.jpg");
+  description.attr("src", "IMG/description.jpg");
   description.appendTo('.flexbox-intro');
 
   // START BUTTON
@@ -380,7 +380,7 @@ Game.prototype.gameOver = function() {
   $(".gameover-background").append("<div class=gameover-overlay>");
 
   var gameoverBackgroundPic = $('<img class="gameoverBackgroundPic">');
-  gameoverBackgroundPic.attr("src", "../IMG/loser.gif");
+  gameoverBackgroundPic.attr("src", "IMG/loser.gif");
   gameoverBackgroundPic.appendTo('.gameover-background');
 
   //TOTALSCORE
