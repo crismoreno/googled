@@ -210,6 +210,10 @@ function Game() {
 Game.prototype.home = function() {
   var self = this;
 
+  //DELETING HOME
+  $(".school").remove();
+
+
   // ADD FLEXBOX CLASS TO .CONTAINER
   $(".container").addClass("flexbox-intro");
 
@@ -237,7 +241,10 @@ Game.prototype.home = function() {
 
 
   //FOOTER DETAILS
-  $("footer").append("<p class=school> At IronHack Barcelona </p>");
+  if ($(".school")) {
+    $("footer").append("<p class=school> At IronHack Barcelona </p>");
+  }
+
 
   //RUNS "GAME" FUNCTION WHENEVER WE CLICK ON START-BUTTON
   //$(".start-button").click(game);
@@ -533,7 +540,7 @@ Game.prototype._formatNumber = function(number) {
 //---------TIMEOUT
 Game.prototype.initTimeOut = function() {
   var self = this;
-  self.time = 100000;
+  self.time = 10;
   self._timeInterval = setInterval(function() {
     $('.time').text(self.time);
 

@@ -25,12 +25,9 @@ html, body {
 div {
   border: 1px solid red;
 }
-
-
 p {
   border: 1px solid red;
 }
-
 footer {
   border: 1px solid red;
 }
@@ -178,7 +175,6 @@ footer {
 
 /*
 .leftTopic, .leftHas, .leftAmount, .leftAverage {}
-
 .rightTopic, .rightHas, .rightAmount, .rightAverage {}
 */
 
