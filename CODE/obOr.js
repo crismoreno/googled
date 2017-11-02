@@ -235,6 +235,10 @@ Game.prototype.home = function() {
   startButton.text("Ok! go for it");
   startButton.appendTo('.flexbox-intro');
 
+
+  //FOOTER DETAILS
+  $("footer").append("<p class=school> At IronHack Barcelona </p>");
+
   //RUNS "GAME" FUNCTION WHENEVER WE CLICK ON START-BUTTON
   //$(".start-button").click(game);
   startButton.on("click", function() {
@@ -281,8 +285,9 @@ Game.prototype.challenge = function() {
   // OVERLAY + PICS RIGHT & LEFT
 
   $(".container").append("<div class=overlay>");
-  $(".container").append("<p class=score></p>");
+  $("footer").append("<p class=score></p>");
   $(".score").text("Score: " + self.score);
+  $(".school").remove();
 
 
   $(".flexbox-game").append("<div class=attributes>");
@@ -321,18 +326,19 @@ Game.prototype.challenge = function() {
   //IMG ATTRIBUTES RIGHT
   $(".right-pic-attributes").append("<p class=rightTopic>'" + self.selectedCases[1].name + "'</p>");
   $(".right-pic-attributes").append("<p class=rightHas>has</p>");
-  $(".right-pic-attributes").append("<p class=rightAmount> ? </p>");
+
   $(".right-pic-attributes").append("<p class=rightAverage>average monthly searches</p>");
+
   $(".right-pic-attributes").append("<button class=higherButton");
   $(".right-pic-attributes").append("<button class=lowerButton");
 
   // BUTTONS
   var higherButton = $('<button class="higherButton">');
-  higherButton.text("Higher");
+  higherButton.html("Higher &uarr;");
   higherButton.appendTo('.buttonsHigherLower');
 
   var lowerButton = $('<button class="lowerButton">');
-  lowerButton.text("Lower");
+  lowerButton.html("Lower &#8595;");
   lowerButton.appendTo('.buttonsHigherLower');
 
   //RUNS "GAMEOVER" FUNCTION WHENEVER WE CLICK ON .LOWERBUTTON OR .HIGHERBUTTON
@@ -391,6 +397,8 @@ Game.prototype.gameOver = function() {
   //GAMEOVER BUTTONS
   $(".flexbox-gameover").append("<div class=gameover-buttons>");
 
+  // FOOTER DETAILS
+  $("footer").append("<p class=school> At IronHack Barcelona </p>");
 
   //PLAY AGAIN
   var playAgainButton = $("<button class=play-again-button>");
@@ -433,7 +441,6 @@ Game.prototype.winner = function() {
   $(".higherButton").remove();
   $(".lowerButton").remove();
 
-
   //CREATING NEXT CHALLENGE BUTTON
   var nextChallengeButton = $('<button class="next-challenge-button">');
   nextChallengeButton.appendTo('.buttonsHigherLower');
@@ -444,8 +451,10 @@ Game.prototype.winner = function() {
   } else {
     //CREATING NEXT CHALLENGE BUTTON - NOT A TIE
     nextChallengeButton.text("Cool! One more :)");
-
   }
+
+  //CREATING THE SEARCHES NUMBER
+  $(".right-pic-attributes").append("<p class=rightAmount></p>");
 
   // ON CLICK - GO TO THE NEXT CHALLENGE
   nextChallengeButton.on("click", function() {
@@ -524,7 +533,7 @@ Game.prototype._formatNumber = function(number) {
 //---------TIMEOUT
 Game.prototype.initTimeOut = function() {
   var self = this;
-  self.time = 10;
+  self.time = 100000;
   self._timeInterval = setInterval(function() {
     $('.time').text(self.time);
 
