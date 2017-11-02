@@ -72,7 +72,8 @@ footer {
 }
 
 .logo {
-  width: 271px;
+  width: 24%;
+  margin-bottom: 1%;
 }
 
 .start-button {
@@ -84,13 +85,14 @@ footer {
   color: #757575;
   padding: 0 16px;
   text-align: center;
-  height: 36px;
+  height: 5%;
   line-height: 27px;
   margin-top: 18px;
+  border-radius: 8%;
 }
 
 .description {
-  margin-top: 18px;
+  width: 40%;
 }
 
 /*------STATE : GAME------*/
