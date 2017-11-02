@@ -1,0 +1,14 @@
+{
+  "undef": true,
+  "unused": true,
+  "strict": "global",
+  "globals": {
+    "console": true,
+    "$": true,
+    "document":true,
+    "numeral":true,
+    "setInterval":true,
+    "Game":true,
+    "clearInterval":true
+  }
+}

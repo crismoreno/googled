@@ -1,0 +1,406 @@
+/* CSS master for "The Googled Game" - Needs: (main.html, obOr.js and obOr+.js, jquery-2.1.4.js)*/
+
+/*------DEFAULT RESET------*/
+
+html, body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*:before, *, *:after {
+  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+}
+
+/*------TESTING------*/
+
+/*
+div {
+  border: 1px solid red;
+}
+
+
+p {
+  border: 1px solid red;
+}
+
+footer {
+  border: 1px solid red;
+}
+*/
+
+/*------SETTING CONTAINER------*/
+
+.container {
+  height: 92%;
+}
+
+/*------FOOTER------*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  width: 100%;
+  z-index: 1;
+  font-family: "Arial", sans-serif;
+  color: rgb(139, 139, 139);
+  font-size: small;
+  height: 8%;
+  align-items: center;
+}
+
+/*------STATE : HOME------*/
+
+.flexbox-intro {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.logo {
+  width: 271px;
+}
+
+.start-button {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  color: #757575;
+  padding: 0 16px;
+  text-align: center;
+  height: 36px;
+  line-height: 27px;
+  margin-top: 18px;
+}
+
+.description {
+  margin-top: 18px;
+}
+
+/*------STATE : GAME------*/
+
+.flexbox-game {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-pic, .right-pic {
+  width: 50%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.right-pic-img, .left-pic-img {
+  overflow: hidden;
+}
+
+.countdown {
+  background-color: white;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+
+.middle-frame {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 92%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.overlay {
+  background-color: rgba(47, 47, 47, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 92%;
+  z-index: 1;
+}
+
+/*IMAGE ATTRIBUTES*/
+
+.attributes {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  display: flex;
+  width: 100%;
+  height: 92%;
+}
+
+.margin-middle {
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  margin: 0 auto;
+  background-color: white;
+  z-index: 2;
+}
+
+.left-pic-attributes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-pic-attributes {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*SEPARATED BY RIGHT & LEFT*/
+
+/*
+.leftTopic, .leftHas, .leftAmount, .leftAverage {}
+
+.rightTopic, .rightHas, .rightAmount, .rightAverage {}
+*/
+
+/*SEPARATED BY TOPIC*/
+
+.leftTopic, .rightTopic {
+  font-family: "Roboto Slab";
+  font-size: 2em;
+  margin: 0;
+}
+
+/*SEPARATED BY HAS*/
+
+.leftHas, .rightHas {
+  font-family: "Roboto";
+  font-size: 1em;
+  margin: 10px;
+}
+
+/*SEPARATED BY AMOUNT*/
+
+.leftAmount, .rightAmount {
+  font-family: "Roboto Slab";
+  font-size: 2em;
+  margin: 0;
+}
+
+/*SEPARATED BY AVERAGE*/
+
+.leftAverage, .rightAverage {
+  font-family: "Roboto";
+  font-size: 1em;
+  margin: 5px;
+}
+
+/*BUTTONS*/
+
+.buttonsHigherLower {
+  width: 50%;
+  height: 92%;
+  z-index: 4;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.higherButton {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(13, 143, 57);
+  font-family: "Roboto";
+  font-size: 1em;
+  margin-bottom: 120px;
+  color: white;
+  border: none;
+}
+
+.lowerButton {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgb(204, 60, 60);
+  font-family: "Roboto";
+  font-size: 1em;
+  margin-top: 120px;
+  color: white;
+  border: none;
+}
+
+.higherButton, .lowerButton {}
+
+/*SCORE*/
+
+.score {
+  font-family: "Roboto Slab";
+  font-size: 2em;
+  position: absolute;
+  color: white;
+  float: right;
+  z-index: 2;
+  left: 83%;
+  bottom: 10%;
+}
+
+/*------STATE : GAMEOVER------*/
+
+.flexbox-gameover {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 92%;
+}
+
+/*BACKGROUND*/
+
+.gameover-background {
+  height: 92%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.gameover-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.gameoverBackgroundPic {
+  background-size: cover;
+  width: 100%;
+  z-index: 0;
+}
+
+/*BUTTONS*/
+
+.gameover-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+
+.play-again-button, .back-to-beginning-button, .share-the-love-button {
+  font-family: "Roboto";
+  border-radius: 5px;
+  border: none;
+  font-size: 0.8em;
+  width: 170px;
+  height: 40px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.play-again-button {
+  background-color: rgb(244, 158, 57);
+}
+
+.back-to-beginning-button {
+  background-color: rgb(46, 97, 144);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.share-the-love-button {
+  background-color: rgb(255, 98, 145);
+}
+
+/*POINTS*/
+
+.total-score {
+  z-index: 1;
+}
+
+.numberScore {
+  font-family: "Roboto Slab";
+  font-size: 3em;
+  color: white;
+  margin: 0;
+}
+
+/*------STATE : WINNER------*/
+
+.flexbox-winner {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-challenge-button {
+  width: 290px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgb(13, 143, 57);
+  font-family: "Roboto";
+  font-size: 1em;
+  color: white;
+  border: none;
+  position: Relative;
+  top: 130px;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 22px;
+  padding: 10px;
+}
+
+/*------TIMOUT STYLE------*/
+
+.time {
+  font-family: "Roboto Slab";
+  font-size: 4em;
+  margin: 0;
+  color: rgb(13, 143, 57);
+  font-weight: 800;
+  position: absolute;
+  z-index: 3;
+}
+
+.red-time {
+  color: rgb(204, 60, 60);
+}
+
+/*------RESPONSIVENESS 1024px < width ------*/
+
+@media (min-width: 1024) {
+  .right-pic-img, .left-pic-img {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+}
