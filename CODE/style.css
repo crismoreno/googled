@@ -82,10 +82,11 @@ footer {
   color: #757575;
   padding: 0 16px;
   text-align: center;
-  height: 5%;
+  height: 41px;
   line-height: 27px;
   margin-top: 18px;
-  border-radius: 8%;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .description {
@@ -107,6 +108,7 @@ footer {
 
 .right-pic-img, .left-pic-img {
   overflow: hidden;
+  width: 100%;
 }
 
 .countdown {
@@ -118,7 +120,7 @@ footer {
 
 .middle-frame {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   width: 100%;
   height: 92%;
   display: flex;
@@ -169,6 +171,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 /*SEPARATED BY RIGHT & LEFT*/
@@ -238,12 +241,9 @@ footer {
   position: absolute;
   display: flex;
   flex-direction: row;
-  left: 50%;
-  top: 20px;
-  align-items: center;
   justify-content: center;
-  width: 50%;
-  height: 92%;
+  height: 7%;
+  top: 50.3%;
 }
 
 .higherButton {
@@ -272,7 +272,7 @@ footer {
 
 .higherButton, .lowerButton {
   position: relative;
-  top: 5px;
+  cursor: pointer;
 }
 
 /*SCORE*/
@@ -321,6 +321,7 @@ footer {
   background-size: cover;
   width: 100%;
   z-index: 0;
+  background-repeat: repeat;
 }
 
 /*BUTTONS*/
@@ -345,6 +346,7 @@ footer {
   height: 40px;
   color: white;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .play-again-button {
@@ -391,6 +393,7 @@ footer {
   font-weight: 100;
   line-height: 22px;
   padding: 10px;
+  cursor: pointer;
 }
 
 /*------TIMOUT STYLE------*/
@@ -419,5 +422,75 @@ footer {
   .margin-middle {
     width: 100%;
     height: 10px;
+  }
+  .attributes {
+    flex-direction: column;
+  }
+  .left-pic-attributes {
+    height: 50%;
+    width: 100%;
+  }
+  .right-pic-attributes {
+    height: 50%;
+    width: 100%;
+  }
+  .buttonsHigherLower {
+    top: 76.3%;
+  }
+  .logo {
+    width: 210px;
+    margin-bottom: 8px;
+  }
+  .description {
+    width: 340px;
+  }
+  .start-button {
+    margin-top: 11px;
+    height: 36px;
+  }
+  .leftTopic, .rightTopic {
+    font-family: "Roboto Slab";
+    font-size: 1.9em;
+    margin: 0;
+  }
+  .countdown {
+    width: 70px;
+    height: 70px;
+  }
+  .time {
+    font-size: 3em;
+  }
+  .leftHas, .rightHas {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .rightAverage {
+    position: relative;
+    top: 36px;
+  }
+  .left-pic, .right-pic {
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+  }
+  .left-pic-img, .right-pic-img {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media ( min-width: 1000px) {
+  .right-pic-img, .left-pic-img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (orientation:landscape, min-width: 700px) {
+  .right-pic-img, .left-pic-img {
+    width: auto;
+    height: 100%;
   }
 }

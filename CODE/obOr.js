@@ -299,7 +299,7 @@ Game.prototype.challenge = function() {
 
   $(".flexbox-game").append("<div class=attributes>");
 
-  $(".flexbox-game").append("<div class=buttonsHigherLower>");
+
 
   $(".flexbox-game").append("<div class=left-pic>");
   var leftPicImg = $('<img class="left-pic-img">');
@@ -313,6 +313,8 @@ Game.prototype.challenge = function() {
 
   $(".attributes").append("<div class=left-pic-attributes>");
   $(".attributes").append("<div class=right-pic-attributes>");
+
+  $(".right-pic-attributes").append("<div class=buttonsHigherLower>");
 
   // COUNTDOWN
   $(".flexbox-game").append("<div class=middle-frame>");
@@ -540,7 +542,7 @@ Game.prototype._formatNumber = function(number) {
 //---------TIMEOUT
 Game.prototype.initTimeOut = function() {
   var self = this;
-  self.time = 10;
+  self.time = 1000;
   self._timeInterval = setInterval(function() {
     $('.time').text(self.time);
 
