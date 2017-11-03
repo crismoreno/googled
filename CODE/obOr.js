@@ -394,8 +394,8 @@ Game.prototype.gameOver = function() {
   $(".container").append("<div class=gameover-background>");
   $(".gameover-background").append("<div class=gameover-overlay>");
 
-  var gameoverBackgroundPic = $('<img class="gameoverBackgroundPic">');
-  gameoverBackgroundPic.attr("src", "IMG/loser.gif");
+  var gameoverBackgroundPic = $('<div class="gameoverBackgroundPic">');
+  //gameoverBackgroundPic.attr("src", "IMG/loser.gif");
   gameoverBackgroundPic.appendTo('.gameover-background');
 
   //TOTALSCORE
