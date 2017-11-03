@@ -542,7 +542,7 @@ Game.prototype._formatNumber = function(number) {
 //---------TIMEOUT
 Game.prototype.initTimeOut = function() {
   var self = this;
-  self.time = 1000;
+  self.time = 10;
   self._timeInterval = setInterval(function() {
     $('.time').text(self.time);
 

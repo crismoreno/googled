@@ -416,6 +416,9 @@ footer {
 /*------RESPONSIVENESS PORTRAIT ------*/
 
 @media (orientation: portrait) {
+  .higherButton, .lowerButton {
+    width: 120px;
+  }
   .flexbox-game {
     display: flex;
     flex-direction: column;
