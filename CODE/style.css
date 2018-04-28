@@ -511,7 +511,7 @@ footer {
   }
 }
 
-@media (orientation:landscape, min-width: 700px) {
+@media (orientation:landscape) and (min-width: 700px) {
   .right-pic-img, .left-pic-img {
     width: auto;
     height: 100%;
